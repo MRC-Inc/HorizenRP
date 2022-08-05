@@ -1,0 +1,2 @@
+-- Контент
+-- resource.AddWorkshop("2799785384")
