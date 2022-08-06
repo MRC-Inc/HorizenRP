@@ -334,8 +334,8 @@ GM.Config.notificationSound = "buttons/lightswitch2.wav"
 
 -- Put Steam ID's and ranks in this list, and the players will have that rank when they join.
 GM.Config.DefaultPlayerGroups = {
-    ["STEAM_0:0:00000000"] = "superadmin",
-    ["STEAM_0:0:11111111"] = "admin",
+    ["STEAM_0:1:77177968"] = "superadmin",
+    ["STEAM_0:1:79822223"] = "superadmin",
 }
 
 -- Custom modules in this addon that are disabled.
