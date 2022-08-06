@@ -1,0 +1,185 @@
+// Translated by Blaster Alpha
+// Steam Profile: https://steamcommunity.com/profiles/blasteralphaita
+// Gmodstore Profile: https://www.gmodstore.com/users/blasteralpha
+
+
+ModernCarDealer.Language = ModernCarDealer.Language or {}
+
+-- Player Interactions
+
+ModernCarDealer.Language["vehicles"] = "Veicolo"
+ModernCarDealer.Language["vehicle_information"] = "Informazioni Veicolo"
+ModernCarDealer.Language["vehicle_finish"] = "Veicolo Finito"
+ModernCarDealer.Language["vehicle_underglow"] = "Luce sotto il veicolo"
+ModernCarDealer.Language["default_garage_name"] = "Ritira Il Veicolo"
+ModernCarDealer.Language["default_dealer_name"] = "Venditore Veicoli"
+ModernCarDealer.Language["miscellaneous"] = "Varie"
+ModernCarDealer.Language["free"] = "Gratis"
+ModernCarDealer.Language["purchase"] = "Compra"
+ModernCarDealer.Language["insurance"] = "Assicurazione"
+ModernCarDealer.Language["sign"] = "Firma"
+ModernCarDealer.Language["dealer_agreement"] = "Contratto di vendita"
+ModernCarDealer.Language["price"] = "Prezzo"
+ModernCarDealer.Language["cannot_afford"] = "Non può permetterlo"
+ModernCarDealer.Language["no_access"] = "Nessun accesso"
+ModernCarDealer.Language["test_drive"] = "Test Guida"
+ModernCarDealer.Language["test_drive_hud"] = "Il test guida si concluderà %i secondi."
+ModernCarDealer.Language["health"] = "Vita"
+ModernCarDealer.Language["retrieve"] = "Ritira"
+ModernCarDealer.Language["return_garage"] = "Ritorna"
+ModernCarDealer.Language["available"] = "Disponibile"
+ModernCarDealer.Language["unavailable"] = "Non disponibile"
+ModernCarDealer.Language["return_mechanic"] = "Ritorna"
+ModernCarDealer.Language["fix"] = "Aggiusta (%s)"
+ModernCarDealer.Language["search"] = "Ricerca"
+ModernCarDealer.Language["back"] = "Indietro"
+ModernCarDealer.Language["cancel"] = "Annulla"
+ModernCarDealer.Language["exit"] = "Esci"
+ModernCarDealer.Language["next"] = "Prossimo"
+
+ModernCarDealer.Language["sort_category"] = "Ordina per: Categoria"
+ModernCarDealer.Language["sort_high_low"] = "Ordina per: Prezzo (da alto a basso)"
+ModernCarDealer.Language["sort_low_high"] = "Ordina per: Prezzo (da basso ad alto)"
+
+ModernCarDealer.Language["presets"] = "Preimpostazioni"
+ModernCarDealer.Language["create_preset"] = "Crea preimpostazione"
+ModernCarDealer.Language["choose_name"] = "Scegli un nome per questa preimpostazione."
+ModernCarDealer.Language["modify_vehicle"] = "Modifica Veicolo"
+ModernCarDealer.Language["preview"] = "Anteprima"
+
+ModernCarDealer.Language["mechanic"] = "Meccanico"
+ModernCarDealer.Language["color"] = "Colore"
+ModernCarDealer.Language["skin"] = "Skin"
+ModernCarDealer.Language["bodygroups"] = "Bodygroups"
+ModernCarDealer.Language["underglow"] = "Luce Sotto"
+ModernCarDealer.Language["upgrades"] = "Migliora"
+ModernCarDealer.Language["apply"] = "Applica"
+
+ModernCarDealer.Language["color_notice"] = "Non hai selezionato un colore diverso!"
+ModernCarDealer.Language["already_owned_notice"] = "Lo possiedi già."
+ModernCarDealer.Language["afford_notice"] = "Non puoi permetterti questa transazione."
+ModernCarDealer.Language["content_missing"] = "Il contenuto del server è mancante: %s"
+ModernCarDealer.Language["error_notice"] = "Si è verificato un errore, contattare un amministratore."
+ModernCarDealer.Language["exists"] = "Esiste già."
+
+
+ModernCarDealer.Language["purchase_success"] = "Hai effettuato un acquisto con successo."
+ModernCarDealer.Language["purchase_success_garage"] = "Hai effettuato un acquisto con successo, controlla il tuo garage."
+ModernCarDealer.Language["requirements"] = "Non soddisfi più i requisiti per utilizzare questo veicolo."
+ModernCarDealer.Language["max_vehicles"] = "Hai già il numero massimo di veicoli in circolazione!"
+ModernCarDealer.Language["car_far"] = "Il tuo veicolo è troppo lontano, avvicinalo."
+ModernCarDealer.Language["spawn_positions_full"] = "Tutte le posizioni di spawn sono piene, chiedi che vengano cancellate."
+ModernCarDealer.Language["vehicle_retrieved"] = "Hai recuperato un veicolo, controlla l'area di spawn del veicolo."
+ModernCarDealer.Language["vehicle_returned"] = "Hai restituito un veicolo."
+ModernCarDealer.Language["vehicle_sold"] = "Hai venduto la tua auto."
+ModernCarDealer.Language["vehicle_sold_confirm"] = "Sei sicuro di voler vendere la tua auto?"
+ModernCarDealer.Language["sell"] = "Vendi"
+ModernCarDealer.Language["vehicle_repaired"] = "Hai riparato la tua auto."
+ModernCarDealer.Language["no_vehicles"] = "Nessun veicolo da mostrare qui, visita un concessionario."
+
+ModernCarDealer.Language["top_speed"] = "Velocità massima"
+ModernCarDealer.Language["horsepower"] = "Horsepower"
+ModernCarDealer.Language["braking"] = "Frenata"
+ModernCarDealer.Language["torque"] = "Coppia"
+
+-- Bodygroups
+
+ModernCarDealer.Language["fbumper"] = "Paraurti anteriore"
+ModernCarDealer.Language["rbumper"] = "Paraurti posteriore"
+ModernCarDealer.Language["exterior_trim"] = "Rifinitura esterna"
+ModernCarDealer.Language["interior_trim"] = "Rivestimento interno"
+ModernCarDealer.Language["roofrack"] = "portapacchi"
+ModernCarDealer.Language["towbar"] = "Gancio traino"
+ModernCarDealer.Language["dog_cage"] = "Gabbia per cani"
+ModernCarDealer.Language["badge_delete"] = "Elimina badge"
+ModernCarDealer.Language["privacy_glass"] = "Vetro privacy"
+ModernCarDealer.Language["numberplate"] = "Numero di targa"
+ModernCarDealer.Language["chromestrip"] = "Striscia Chrome"
+ModernCarDealer.Language["mudguards"] = "Parafanghi"
+ModernCarDealer.Language["runningboards"] = "Runningboards"
+ModernCarDealer.Language["wheelarches"] = "Passaruota"
+ModernCarDealer.Language["backlayout"] = "Layout posteriore"
+ModernCarDealer.Language["rooflights"] = "Luci del tetto"
+ModernCarDealer.Language["sparewheel"] = "Ruota di scorta"
+ModernCarDealer.Language["frontwheels"] = "Ruote anteriori"
+ModernCarDealer.Language["rearwheels"] = "Ruote posteriori"
+ModernCarDealer.Language["bumperpanels"] = "Pannelli paraurti"
+
+
+
+-- Admin Configuration (NOT COMPLETELY NECCESSARY TO TRANSLATE)
+
+ModernCarDealer.Language["admin_configuration"] = "Configurazione amministratore"
+ModernCarDealer.Language["dealers"] = "Dealer"
+ModernCarDealer.Language["npcs"] = "NPC"
+ModernCarDealer.Language["area_manager"] = "Gestore di area"
+ModernCarDealer.Language["player_manager"] = "Gestione giocatori"
+ModernCarDealer.Language["transfer_data"] = "Trasferisci dati"
+ModernCarDealer.Language["create_dealer"] = "Crea un rivenditore"
+ModernCarDealer.Language["modify_dealer"] = "Modifica un rivenditore"
+ModernCarDealer.Language["garage_npcs"] = "NPC del garage"
+ModernCarDealer.Language["dealer_npcs"] = "NPCS rivenditore"
+ModernCarDealer.Language["create_dealer_npc"] = "Crea NPC rivenditore"
+ModernCarDealer.Language["create_garage_npc"] = "Crea NPC Garage"
+ModernCarDealer.Language["vehicle_spawn_points"] = "Punti di generazione veicolo"
+ModernCarDealer.Language["upgrade_area"] = "Area di aggiornamento"
+ModernCarDealer.Language["transfer_data"] = "Trasferisci dati"
+ModernCarDealer.Language["transfer_player_data"] = "Trasferisci dati giocatore"
+ModernCarDealer.Language["none_selected"] = "Nessuno selezionato"
+
+ModernCarDealer.Language["dealer_name"] = "Nome rivenditore"
+ModernCarDealer.Language["garage_name"] = "Nome garage"
+ModernCarDealer.Language["dealer_model"] = "Modello rivenditore"
+ModernCarDealer.Language["garage_model"] = "Modello di garage"
+ModernCarDealer.Language["categories"] = "Categorie"
+ModernCarDealer.Language["category"] = "Categoria"
+
+ModernCarDealer.Language["use"] = "Usa"
+ModernCarDealer.Language["yes"] = "Sì"
+ModernCarDealer.Language["no"] = "No"
+
+ModernCarDealer.Language["create_category"] = "Crea categoria"
+ModernCarDealer.Language["custom_check"] = "Verifica personalizzata"
+ModernCarDealer.Language["job_dealer"] = "Job Dealer"
+ModernCarDealer.Language["computer_model"] = "Modello di computer"
+ModernCarDealer.Language["allow_customizing"] = "Consenti personalizzazione"
+ModernCarDealer.Language["force_skin"] = "Pelle forzata"
+ModernCarDealer.Language["completed"] = "Completato"
+ModernCarDealer.Language["queue"] = "Coda"
+ModernCarDealer.Language["process_queue"] = "Coda di elaborazione"
+ModernCarDealer.Language["create"] = "Crea"
+ModernCarDealer.Language["update"] = "Aggiorna"
+ModernCarDealer.Language["remove"] = "Rimuovi"
+ModernCarDealer.Language["move_here"] = "Sposta qui"
+
+ModernCarDealer.Language["creation_tool"] = "Strumento di creazione"
+ModernCarDealer.Language["spawn_point_creation_tool"] = "Strumento per la creazione di punti di spawn"
+ModernCarDealer.Language["mechanic_creation_tool"] = "Strumento di creazione della zona meccanica"
+
+ModernCarDealer.Language["left_click_modify"] = "Clic sinistro per modificare l'entità."
+ModernCarDealer.Language["reload_admin_menu"] = "Ricarica per aprire il menu di amministrazione."
+
+ModernCarDealer.Language["first_point"] = "Clic sinistro per modificare l'entità."
+ModernCarDealer.Language["second_point"] = "Ricarica per aprire il menu amministratore."
+ModernCarDealer.Language["reload"] = "Ricarica per aprire il menu di amministrazione."
+
+ModernCarDealer.Language["enter_point"] = "[ENTER] per creare un punto di spawn."
+ModernCarDealer.Language["delete_point"] = "[BACKSPACE] per eliminare un punto di spawn."
+ModernCarDealer.Language["tab_exit"] = "[TAB] per uscire dallo strumento di creazione e salvare le modifiche."
+ModernCarDealer.Language["enter_vehicle"] = "Inserisci veicolo"
+
+
+
+-- Notices
+
+ModernCarDealer.Language["reset_positions_notice"] = "La posizione meccanica precedentemente impostata verrà ripristinata."
+ModernCarDealer.Language["input_name_notice"] = "Devi inserire qualcosa come nome!"
+ModernCarDealer.Language["input_integer_notice"] = "Non puoi usare un numero come nome del concessionario."
+ModernCarDealer.Language["empty_queue_notice"] = "La coda del processo è vuota."
+ModernCarDealer.Language["dealer_set_notice"] = "Devi avere un set dealer."
+ModernCarDealer.Language["nodata_notice"] = "Ricevi questo messaggio perché sei un amministratore. Estrai lo strumento di creazione."
+ModernCarDealer.Language["touch_tip_notice"] = "SUGGERIMENTO: se il modello non tocca terra, estrai lo strumento più tardi e modificalo."
+ModernCarDealer.Language["restart_notice"] = "È necessario un riavvio per ricevere i veicoli trasferiti. Visualizza la console per un output di determinati veicoli."
+ModernCarDealer.Language["finalize_notice"] = "Sei sicuro di voler finalizzare il tuo concessionario auto?"
+ModernCarDealer.Language["unsaved_notice"] = "Sei sicuro di voler uscire con le modifiche non salvate?"
+ModernCarDealer.Language["delete_notice"] = "Sei sicuro di voler eliminare questo rivenditore?"
