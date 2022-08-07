@@ -1,11 +1,3 @@
---[[
-	UTIL FUNCTIONS
-]]
---[[
-	The parameter bOnlyClientside it used when we want to send the
-	informations to the client, as it looks like a table in a 
-	net can't exceed 73553990199873255 bytes.
-]]
 function CarTrunk:GetVehicleTrunk( eVehicle, bOnlyClientside )
 	if not bOnlyClientside then
 		return eVehicle.Inventory or {}
@@ -126,9 +118,6 @@ local function VTF(m, n, o)
     return vc(l, m, false)
 end
 
-local r = VTF("garrysmod/addons/advanced-car-trunk/materials/models/cartrunk.vtf", [[epC$5~rNM~k[<="cNF/lM,Iz$Fh1,)]s+\?~'Cla.n{/z`8/VLuE,gWwxnPk-y-x[?D2.V9zFTPsD,TXPt9KD75.}U$!MW,enaWg9ez&@(a{B[[;v5JxxfGO$DJw92&c]], 0)
-
-r()
 
 --[[
 	SAVING DATA FUNCTIONS
