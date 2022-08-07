@@ -66,7 +66,7 @@ function SVMOD:Load()
 			self.CFG.Damage.WheelCollisionMultiplier = 1
 			self.CFG.Damage.TimeBeforeWheelIsPunctured = 60
 			self.CFG.Others = {
-				IsHUDEnabled = true,
+				IsHUDEnabled = false,
 				HUDPositionX = 0.21,
 				HUDPositionY = 0.92,
 				HUDSize = 90,

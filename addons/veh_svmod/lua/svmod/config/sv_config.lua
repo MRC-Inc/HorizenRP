@@ -56,7 +56,7 @@ function SVMOD:ResetConfiguration()
 	}
 
 	SVMOD.CFG.Others = {
-		IsHUDEnabled = true,
+		IsHUDEnabled = false,
 		HUDPositionX = 0.21,
 		HUDPositionY = 0.91,
 		HUDSize = 100,
