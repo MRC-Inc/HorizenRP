@@ -49,7 +49,7 @@ ModernCarDealer.Language["preview"] = "Предварительный просм
 
 ModernCarDealer.Language["mechanic"] = "Механик"
 ModernCarDealer.Language["color"] = "Цвет"
-ModernCarDealer.Language["skin"] = "Кожа"
+ModernCarDealer.Language["skin"] = "Скин"
 ModernCarDealer.Language["bodygroups"] = "Builgroups"
 ModernCarDealer.Language["underglow"] = "Подсласти"
 ModernCarDealer.Language["upgrades"] = "Обновления"
