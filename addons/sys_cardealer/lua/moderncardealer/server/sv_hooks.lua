@@ -18,7 +18,7 @@ local function MCD_SpamCheck(sNetMessage, pPlayer)
 end
 
 hook.Add("EntityRemoved", "ModernCarDealer.Hook.UpdateVehicleHealth", function(eEnt)
-    if VC then
+    if SVMOD then
         if eEnt.MCD_Owner and not (eEnt.MCD_Owner == 0) and not ModernCarDealer.SimfPhys[eEnt:GetClass()] then
             local iOwnerID = eEnt.MCD_Owner
             local iCID = eEnt.MCD_CID
@@ -27,7 +27,7 @@ hook.Add("EntityRemoved", "ModernCarDealer.Hook.UpdateVehicleHealth", function(e
 
             for _, tCar in pairs(tPlayerCars) do
                 if tCar.CID == iCID then
-                    tCar.Health = math.Round(eEnt:VC_getHealth(true))
+                    tCar.Health = math.Round(eEnt:SV_GetPercentHealth())
                     break
                 end
             end
@@ -41,12 +41,11 @@ hook.Add("EntityRemoved", "ModernCarDealer.Hook.UpdateVehicleHealth", function(e
     end
 end)
 
-hook.Add("VC_postVehicleInit", "ModernCarDealer.Hook.SetVehicleHealth", function(eVehicle)
-    if VC then
+hook.Add("SV_VehicleLoaded", "ModernCarDealer.Hook.SetVehicleHealth", function(eVehicle)
+    if SVMOD then
         if not (eVehicle.MCD_Owner == 0) and not ModernCarDealer.SimfPhys[eVehicle:GetClass()] then
-            eVehicle:VC_setHealth(eVehicle:VC_getHealthMax()*((eVehicle.MCD_Health or 100)/100))
-
-            eVehicle:VC_fuelSet(eVehicle:VC_fuelGetMax())
+            eVehicle:SV_SetHealth(eVehicle:SV_GetMaxHealth()*((eVehicle.MCD_Health or 100)/100))
+            eVehicle:SV_SetFuel(eVehicle:SV_GetMaxFuel())
         end
     end
 end)

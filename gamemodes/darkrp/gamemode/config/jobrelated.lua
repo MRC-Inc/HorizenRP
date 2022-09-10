@@ -3,19 +3,13 @@ local GAMEMODE = GAMEMODE or GM
 -- Список персонала
 local stafflist = {
         "superadmin",
-        "admin",
-        "curator",
-        "admin3",
-        "admin2",
-        "admin1",
-        "moder3",
-        "moder2",
-        "moder1",
-        "moder0"
+        "admin"
 }
 
 -- Список донат групп
 local donatelist = {
+        "superadmin",
+        "admin",
         "deluxe",
         "premium",
         "vip"
@@ -57,7 +51,10 @@ TEAM_CITIZEN = DarkRP.createJob("Гражданин", {
 
 TEAM_GUN = DarkRP.createJob("Продавец оружия", {
     color = Color(20, 150, 20, 255),
-    model = "models/player/monk.mdl",
+    model = {
+        "models/player/monk.mdl",
+        "models/player/eli.mdl"
+    },
     description = [[Вы торгуете оружием, но прежде чем начать торговлю, Вам нужна лицензия.]],
     weapons = {},
     command = "gundealer",
@@ -72,7 +69,12 @@ TEAM_GUN = DarkRP.createJob("Продавец оружия", {
 
 TEAM_MEDIC = DarkRP.createJob("Доктор", {
     color = Color(20, 150, 20, 255),
-    model = "models/player/kleiner.mdl",
+    model = {
+        "models/redninja/pmedic01.mdl",
+        "models/redninja/pmedic01f.mdl",
+        "models/redninja/pmedic02.mdl",
+        "models/redninja/pmedic02f.mdl"
+    },
     description = [[Ваша задача состоит в том, чтобы лечить людей, организуйте небольшую больницу и предлагайте свои услуги жителям города.]],
     weapons = {"med_kit"},
     command = "medic",
@@ -153,10 +155,8 @@ TEAM_WOODMAN = DarkRP.createJob("Дровосек", {
 TEAM_BANKIR = DarkRP.createJob("Банкир", {
     color = Color(20, 150, 20, 255),
     model = {
-        "models/player/hostage/hostage_01.mdl",
 		"models/player/hostage/hostage_02.mdl",
-		"models/player/hostage/hostage_03.mdl",
-		"models/player/hostage/hostage_04.mdl"
+		"models/player/hostage/hostage_03.mdl"
     },
     description = [[Банкир зарабатывает на выдаче кредитов и хранении принтеров.
     Учтите, что Вам придётся постоянно улучшать защиту своего бизнеса, иначе Вас могут ограбить и Ваш банк потеряет доверие жителей города.]],
@@ -174,7 +174,15 @@ TEAM_BANKIR = DarkRP.createJob("Банкир", {
 TEAM_OXRANA = DarkRP.createJob("Охранник", {
     color = Color(243,188,13),
     model = {
-        "models/player/odessa.mdl"
+        "models/player/guard_pack/guard_01.mdl",
+        "models/player/guard_pack/guard_02.mdl",
+        "models/player/guard_pack/guard_03.mdl",
+        "models/player/guard_pack/guard_04.mdl",
+        "models/player/guard_pack/guard_05.mdl",
+        "models/player/guard_pack/guard_06.mdl",
+        "models/player/guard_pack/guard_07.mdl",
+        "models/player/guard_pack/guard_08.mdl",
+        "models/player/guard_pack/guard_09.mdl"
     },
     description = [[Нанимайтесь в охрану магазина, банка, предприятия или же частным телохранителем.
     Вы должны защищать заведение от хулиганов и мелких воров. 
@@ -195,20 +203,7 @@ TEAM_OXRANA = DarkRP.createJob("Охранник", {
 TEAM_RABOTNIKJEK = DarkRP.createJob("Работник ЖКХ", {
     color = Color(20, 150, 20, 255),
     model = {
-        "models/player/Group03/male_01.mdl",
-        "models/player/Group03/Male_02.mdl",
-        "models/player/Group03/male_03.mdl",
-        "models/player/Group03/Male_04.mdl",
-        "models/player/Group03/Male_05.mdl",
-        "models/player/Group03/Male_06.mdl",
-        "models/player/Group03/Male_07.mdl",
-        "models/player/Group03/Male_08.mdl",
-        "models/player/Group03/Male_09.mdl",
-        "models/player/Group03/female_01.mdl",
-        "models/player/Group03/Female_02.mdl",
-        "models/player/Group03/Female_03.mdl",
-        "models/player/Group03/Female_04.mdl",
-        "models/player/Group03/Female_06.mdl",
+        "models/snowred/dab9595/hex/odessa.mdl"
     },
     description = [[Вы зарабатываете на ремонте инфраструктуры города.]],
     weapons = {"cityworker_pliers", "cityworker_shovel", "cityworker_wrench"},
@@ -225,7 +220,23 @@ TEAM_RABOTNIKJEK = DarkRP.createJob("Работник ЖКХ", {
 -- Полиция
 TEAM_POLICE = DarkRP.createJob("Патрульный", {
     color = Color(30, 30, 255),
-    model = {"models/player/police.mdl", "models/player/police_fem.mdl"},
+    model = {
+        "models/monolithservers/mpd/male_02.mdl",
+        "models/monolithservers/mpd/male_01.mdl",
+        "models/monolithservers/mpd/male_04.mdl",
+        "models/monolithservers/mpd/male_03.mdl",
+        "models/monolithservers/mpd/male_05.mdl",
+        "models/monolithservers/mpd/male_06.mdl",
+        "models/monolithservers/mpd/male_07.mdl",
+        "models/monolithservers/mpd/male_08.mdl",
+        "models/monolithservers/mpd/male_09.mdl",
+        "models/monolithservers/mpd/female_01.mdl",
+        "models/monolithservers/mpd/female_02.mdl",
+        "models/monolithservers/mpd/female_03.mdl",
+        "models/monolithservers/mpd/female_04.mdl",
+        "models/monolithservers/mpd/female_05.mdl",
+        "models/monolithservers/mpd/female_06.mdl"
+    },
     description = [[Полицейский является защитником каждого гражданина, который живет в городе. 
     Вы можете выписывать штрафы, арестовать преступников и защитить невинный людей.]],
     weapons = {"arrest_stick", "stunstick", "door_ram", "weaponchecker", "bb_glock", "pocket"},
@@ -267,7 +278,14 @@ TEAM_CHIEF = DarkRP.createJob("Начальник полиции", {
 -- SWAT
 TEAM_SWATSOLIDER = DarkRP.createJob("Штурмовик", {
     color = Color(45, 45, 45),
-    model = "models/player/urban.mdl",
+    model = {
+        "models/monolithservers/kerry/swat_male_02.mdl",
+        "models/monolithservers/kerry/swat_male_04.mdl",
+        "models/monolithservers/kerry/swat_male_05.mdl",
+        "models/monolithservers/kerry/swat_male_07.mdl",
+        "models/monolithservers/kerry/swat_male_08.mdl",
+        "models/monolithservers/kerry/swat_male_09.mdl"
+    },
     description = [[Штурмовой отряд спецназ, выполняет зачистку и штурм особо опасной местности.]],
     weapons = {"arrest_stick", "stunstick", "door_ram", "weaponchecker", "bb_usp", "bb_m4a1", "bb_css_smoke", "pocket"},
     command = "swatsolider",
@@ -289,7 +307,14 @@ TEAM_SWATSOLIDER = DarkRP.createJob("Штурмовик", {
 
 TEAM_SWATMEDIC = DarkRP.createJob("Врач", {
     color = Color(45, 45, 45),
-    model = "models/player/gasmask.mdl",
+    model = {
+        "models/monolithservers/kerry/swat_male_02.mdl",
+        "models/monolithservers/kerry/swat_male_04.mdl",
+        "models/monolithservers/kerry/swat_male_05.mdl",
+        "models/monolithservers/kerry/swat_male_07.mdl",
+        "models/monolithservers/kerry/swat_male_08.mdl",
+        "models/monolithservers/kerry/swat_male_09.mdl"
+    },
     description = [[Выполняет поддержку штурмового отряда во время зачистки или штурма особо опасной местности.]],
     weapons = {"arrest_stick", "stunstick", "door_ram", "weaponchecker", "medkit", "bb_usp", "bb_mp5", "pocket"},
     command = "swatmedic",
@@ -311,7 +336,14 @@ TEAM_SWATMEDIC = DarkRP.createJob("Врач", {
 
 TEAM_SWATSNIPER = DarkRP.createJob("Снайпер", {
     color = Color(45, 45, 45),
-    model = "models/player/riot.mdl",
+    model = {
+        "models/monolithservers/kerry/swat_male_02.mdl",
+        "models/monolithservers/kerry/swat_male_04.mdl",
+        "models/monolithservers/kerry/swat_male_05.mdl",
+        "models/monolithservers/kerry/swat_male_07.mdl",
+        "models/monolithservers/kerry/swat_male_08.mdl",
+        "models/monolithservers/kerry/swat_male_09.mdl"
+    },
     description = [[Прикрывает своих товарищей во время штурма или зачистки особо опасной местности.]],
     weapons = {"arrest_stick", "stunstick", "door_ram", "weaponchecker", "bb_usp", "bb_scout", "pocket"},
     command = "swatsniper",
@@ -333,7 +365,7 @@ TEAM_SWATSNIPER = DarkRP.createJob("Снайпер", {
 
 TEAM_SWATCOMANDER = DarkRP.createJob("Командир отделения", {
     color = Color(45, 45, 45),
-    model = "models/player/swat.mdl",
+    model = "models/player/bfh_enforcer.mdl",
     description = [[Командир отряда спецназ, корденирует работу подразделения и раздает указания как действовать в какой либо ситуции.
     Вы подчиняетесь только Мэру.]],
     weapons = {"arrest_stick", "stunstick", "door_ram", "weaponchecker", "bb_usp", "bb_m4a1", "bb_css_smoke", "pocket"},
@@ -351,31 +383,6 @@ TEAM_SWATCOMANDER = DarkRP.createJob("Командир отделения", {
 		ply:SetMaxHealth(100)
 		ply:SetArmor(100)
 		ply:SetMaxArmor(100)
-	end,
-})
-
-TEAM_SWATBERSERK = DarkRP.createJob("Берсерк (VIP)", {
-    color = Color(243,188,13),
-    model = "models/player/combine_soldier_prisonguard.mdl",
-    description = [[Особый отряд спецназ, облаают большой стойкостью и живучестью.
-    В боевых навыках Вам нет равных.]],
-    weapons = {"arrest_stick", "stunstick", "door_ram", "weaponchecker", "bb_deagle", "bb_m249", "bb_cssfrag", "bb_css_smoke", "pocket"},
-    command = "swatberserk",
-    modelScale = 1.3,
-    max = 2,
-    salary = 2000,
-    admin = 0,
-    vote = false,
-    hasLicense = true,
-    category = "SWAT",
-    canDemote = true,
-	customCheck = function(ply) return ply:GetUserGroup() == "vip" or ply:GetUserGroup() == "moderator" or ply:IsAdmin() end, 
-    CustomCheckFailMsg = "Прикупите привилегию VIP или выше!",
-	PlayerSpawn = function(ply)
-		ply:SetHealth(250)
-		ply:SetMaxHealth(250)
-		ply:SetArmor(250)
-		ply:SetMaxArmor(250)
 	end,
 })
 
@@ -449,20 +456,12 @@ TEAM_NACGUARIANCOMANDER = DarkRP.createJob("Командир нацгварди�
 TEAM_GANG = DarkRP.createJob("Бандит", {
     color = Color(100, 0, 0),
     model = {
-        "models/player/group03/male_01.mdl",
-        "models/player/Group03/Male_02.mdl",
-        "models/player/Group03/male_03.mdl",
-        "models/player/Group03/Male_04.mdl",
-        "models/player/Group03/Male_05.mdl",
-        "models/player/Group03/Male_06.mdl",
-        "models/player/Group03/Male_07.mdl",
-        "models/player/Group03/Male_08.mdl",
-        "models/player/Group03/Male_09.mdl",
-        "models/player/Group03/Female_01.mdl",
-        "models/player/Group03/Female_02.mdl",
-        "models/player/Group03/Female_03.mdl",
-        "models/player/Group03/Female_04.mdl",
-        "models/player/Group03/Female_06.mdl",},
+        "models/player/Suits/robber_open.mdl",
+        "models/player/Suits/robber_shirt.mdl",
+        "models/player/Suits/robber_shirt_2.mdl",
+        "models/player/Suits/robber_tie.mdl",
+        "models/player/Suits/robber_tuckedtie.mdl"
+    },
     description = [[Низшая каста в криминальном мире. 
     Бандит обычно работает на авторитета, который заправляет всеми делами. 
     Воруйте, убивайте и выполняйте заданиям от авторитета.]],
@@ -475,6 +474,10 @@ TEAM_GANG = DarkRP.createJob("Бандит", {
     vote = false,
     hasLicense = false,
     category = "Криминал",
+    PlayerSpawn = function(ply)
+        ply:SetBodygroup(2, 1)
+        ply:SetBodygroup(3, 2)
+    end,
 })
 
 TEAM_MOB = DarkRP.createJob("Авторитет", {
@@ -495,60 +498,10 @@ TEAM_MOB = DarkRP.createJob("Авторитет", {
     category = "Криминал",
 })
 
--- Мафия
-TEAM_MAFIA = DarkRP.createJob("Член мафии", {
-    color = Color(75, 75, 75),
-    model = {
-        "models/player/Group03/female_03.mdl",
-        "models/player/Group03/female_04.mdl",
-        "models/player/Group03/female_05.mdl",
-        "models/player/Group03/female_06.mdl"
-    },
-    description = [[Планируйте похищения, "крышуйте" бизнесы под себя, собирая с них процент.
-    Вы подчиняетесь Дону мафии.]],
-    weapons = {"bb_glock"},
-    command = "mafia",
-    modelScale = 1,
-    max = 6,
-    salary = 100,
-    admin = 0,
-    vote = false,
-    hasLicense = false,
-    category = "Мафия"
-})
-
-TEAM_DONMAFIA = DarkRP.createJob("Дон мафии", {
-    color = Color(75, 75, 75),
-    model = {
-        "models/player/gman_high.mdl"
-    },
-    description = [[Вы - один из двух главных криминальных единиц города.
-    Планируйте грабежи и крупные похищения, рейд на мэрию или войну между семьями или мафией и бандитами.
-    Держите город в страхе, давайте указания членам своей семьи.
-    Если вы хотите основать свою семью, придумайте ей название и пропишите её через /job.]],
-    weapons = {"lockpick", "unarrest_stick", "bb_glock"},
-    command = "donmafia",
-    modelScale = 1,
-    max = 2,
-    salary = 100,
-    admin = 0,
-    vote = true,
-    hasLicense = false,
-    category = "Мафия",
-    PlayerDeath = function(ply, weapon, killer)
-        if( ply:Team() == TEAM_DONMAFIA ) then
-            ply:changeTeam( GAMEMODE.DefaultTeam, true )
-            for k,v in pairs( player.GetAll() ) do
-                v:PrintMessage( HUD_PRINTCENTER, "Глава мафии умер!" )
-            end
-        end
-    end
-})
-
 -- Криминал
 TEAM_HITMAN = DarkRP.createJob("Наемный убийца", {
     color = Color(100, 0, 0),
-    model = "models/player/phoenix.mdl",
+    model = "models/player/agent_47.mdl",
     description = [[Вы убиваете людей за деньги.
     Не можете убивать за бесплатно или просто так.
     Если рядом есть свидетели, то подождите пока жертва уйдёт из людного места или используйте снайперскую винтовку.]],
@@ -565,31 +518,11 @@ TEAM_HITMAN = DarkRP.createJob("Наемный убийца", {
     category = "Криминал"
 })
 
-TEAM_HITMANVIP = DarkRP.createJob("Киллер (VIP)", {
-    color = Color(243,188,13),
-    model = "models/player/leet.mdl",
-    description = [[Вы убиваете людей за деньги.
-    Не можете убивать за бесплатно или просто так.
-    Если рядом есть свидетели, то подождите пока жертва уйдёт из людного места или используйте снайперскую винтовку.]],
-    weapons = {"bb_css_knife", "bb_awp"},
-    command = "hitmanvip",
-    modelScale = 1,
-    max = 2,
-    salary = 0,
-    admin = 0,
-    vote = false,
-    hasLicense = false,
-    candemote = false,
-    hobo = true,
-    category = "Криминал",
-	customCheck = function(ply) return ply:GetUserGroup() == "vip" or ply:GetUserGroup() == "moderator" or ply:IsAdmin() end, 
-    CustomCheckFailMsg = "Прикупите привилегию VIP или выше!",
-})
-
 TEAM_VOR = DarkRP.createJob("Вор", {
     color = Color(100, 0, 0),
     model = {
-        "models/player/guerilla.mdl"        
+        "models/player/group01/cookies114.mdl",
+        "models/bala/gangboi.mdl"
     },
     description = [[Вор является частью криминальных структур.
     Вскрывайте двери и взламывайте кодовые замки.]],
@@ -607,7 +540,8 @@ TEAM_VOR = DarkRP.createJob("Вор", {
 TEAM_PROFECIONALVOR = DarkRP.createJob("Профессиональный вор (VIP)", {
     color = Color(243,188,13),
     model = {
-        "models/player/arctic.mdl"
+        "models/player/group01/cookies114.mdl",
+        "models/bala/gangboi.mdl"
     },
     description = [[Вы можете грабить людей и взламывать дома!]],
     weapons = {"lockpick", "weapon_sh_keypadcracker_deploy", "bb_glock"},
@@ -623,28 +557,13 @@ TEAM_PROFECIONALVOR = DarkRP.createJob("Профессиональный вор 
     CustomCheckFailMsg = "Прикупите привилегию VIP или выше!"
 })
 
-TEAM_CRAKCOOK = DarkRP.createJob("Химик", {
-    color = Color(100, 0, 0),
-    model = {
-        "models/player/kleiner.mdl"
-    },
-    description = [[Варите крэк для продажи, следите за процессом варки и охраняйте своё имущество.
-    Вы можете сотрудничать с бандитами, так же мафия может начать крышевать ваш бизнес.]],
-    weapons = {},
-    command = "crakcook",
-    modelScale = 1,
-    max = 3,
-    salary = 100,
-    admin = 0,
-    vote = false,
-    hasLicense = false,
-    category = "Криминал"
-})
-
 -- Правительство
 TEAM_MAYOR = DarkRP.createJob("Мэр", {
     color = Color(0, 100, 200),
-    model = "models/player/breen.mdl",
+    model = {
+        "models/player/breen.mdl",
+        "models/Obama/Obama.mdl"
+    },
     description = [[Мэр города создает законы, чтобы улучшить жизнь людей в городе.
     Вы можете создавать или принимать ордера на обыск игроков.
     Во время Комендантского часа все люди должны быть в своих домах, а полицейские должны патрулировать город.]],
@@ -693,7 +612,10 @@ TEAM_HOBO = DarkRP.createJob("Бездомный", {
 if not DarkRP.disabledDefaults["modules"]["hungermod"] then
     TEAM_COOK = DarkRP.createJob("Повар", {
         color = Color(255, 255, 255),
-        model = "models/player/mossman.mdl",
+        model = {
+            "models/fearless/chef1.mdl",
+            "models/fearless/chef2.mdl"
+        },
         description = [[Голодное общество нуждается в Вас! Организуйте маленький ларек и продавайте еду.]],
         weapons = {},
         command = "cook",

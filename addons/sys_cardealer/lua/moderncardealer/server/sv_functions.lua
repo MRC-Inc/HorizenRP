@@ -73,6 +73,8 @@ function ModernCarDealer:GiveCar(iId, tCarData)
     tCar.AllowCustomizing = tCarData.AllowCustomizing
     tCar.SimfPhys = tCarData.SimfPhys
     tCar.Insured = tCarData.Insured
+    tCar.Inventory = tCarData.Inventory
+    tCar.VehicleTrunkWeight = tCarData.VehicleTrunkWeight
 
     if tTable1Json then -- CASE: Player vehicle data exists
         table.insert(tTable1, tCar)

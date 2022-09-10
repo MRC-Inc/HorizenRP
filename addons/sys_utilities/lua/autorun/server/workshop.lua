@@ -2,7 +2,8 @@
 resource.AddWorkshop("2028581413") -- rp_southside_day
 resource.AddWorkshop("2345458660") -- svmod
 resource.AddWorkshop("2588031232") -- tacrp
-resource.AddWorkshop("2845118620") -- контент
+resource.AddWorkshop("2845118620") -- контент #1 GM
+resource.AddWorkshop("2861078044") -- контент #2 PMS
 
 -- TDM
 resource.AddWorkshop("113120185")
