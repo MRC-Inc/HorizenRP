@@ -968,7 +968,7 @@ function ModernCarDealer:OpenGarageUI(sGarageName, tGarageParams, tAvailable) --
     
             local repairButton
     
-            if VC and ModernCarDealer.Config.AllowRepairInDealer and iHealth < 100 and bAvailable then
+            if SVMOD and ModernCarDealer.Config.AllowRepairInDealer and iHealth < 100 and bAvailable then
                 repairButton = ModernCarDealer.Button(buttonArea, string.format(ModernCarDealer:GetPhrase("fix"), sCost), 0, 0, 0, 0, cMainColor)
     
                 repairButton.DoClick = function()
@@ -2527,7 +2527,7 @@ function ModernCarDealer:OpenExperimentalGarageUI(sGarageName, tGarageParams, tA
     
             local repairButton
     
-            if VC and ModernCarDealer.Config.AllowRepairInDealer and iHealth < 100 and bAvailable then
+            if SVMOD and ModernCarDealer.Config.AllowRepairInDealer and iHealth < 100 and bAvailable then
                 repairButton = ModernCarDealer.Button(buttonArea, string.format(ModernCarDealer:GetPhrase("fix"), sCost), 0, 0, 0, 0, cButtonColor)
     
                 repairButton.DoClick = function()
